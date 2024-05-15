@@ -1,41 +1,92 @@
 ﻿@{
     ViewData["Title"] = "Área de produtos";
 }
-<h1>@ViewData["Title"]</h1>
-
-<p>Esta área é destinada a inclusão de novos produtos e alteração de valor.</p>
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#" onclick="showTable('tabelaComida')">Comida</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="showTable('tabelaBebida')">Bebida</a>
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Informe um item" aria-label="Buscar">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-        </div>
-    </div>
-</nav>
 
 <div class="container">
-    <div id="tabelaComida" style="display: none;">
-        <h2>Tabela de Comida</h2>
-        <table class="table">
-        </table>
+    <h1 class="text-center">@ViewData["Title"]</h1>
+
+    <p class="text-center">Esta área é destinada a inclusão de novos produtos e alteração de valor.</p>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" onclick="showTable('foodTable')">Comida</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleItem('addItemForm')">Adicionar novo item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showTable('drinkTable')">Bebida</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="addItemForm" class="item-form" style="display: none;">
+        <h2>Adicionar Novo Item</h2>
+        <form id="newItemForm" onsubmit="return submitNewItem()">
+            <label for="itemName">Nome:</label>
+            <input type="text" id="itemName" name="itemName" required><br><br>
+
+            <label for="itemPrice">Preço:</label>
+            <input type="number" id="itemPrice" name="itemPrice" step="0.01" required><br><br>
+
+            <label for="itemType">Tipo:</label>
+            <select id="itemType" name="itemType" required>
+                <option value="" disabled selected>Selecione o tipo</option>
+                <option value="food">Comida</option>
+                <option value="drink">Bebida</option>
+            </select><br><br>
+
+            <button type="submit">Adicionar Item</button>
+        </form>
     </div>
-    <div id="tabelaBebida" style="display: none;">
-        <h2>Tabela de Bebida</h2>
-        <table class="table">
-        </table>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div id="foodTable" style="display: none;">
+                    <h2>Comidas</h2>
+                    <table class="table" id="foodTableBody">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Food</th>
+                            </tr>
+                            <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col">
+                <div id="drinkTable" style="display: none;">
+                    <h2>Bebidas</h2>
+                    <table class="table" id="drinkTableBody">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Drink</th>
+                            </tr>
+                            <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
+
 </div>
 
 <script src="~/js/site.js"></script>
-
