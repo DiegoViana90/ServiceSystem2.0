@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ut/XNAuyueh8+zKUKMrNjOcYjsZaxAIckiFJiXoIUp8UZ1JZ15d8AF5kVj0ChDFzCgb3RFKu0T7/3P1C4EKxCw==",
+  "dgSpecHash": "JSFfJE5hyBRvq9OGk0cm9GCkkDKYIiI7GT2c4P/qAAUbbSBAesM9WCwfUJLJb/HITBkFoUFmTwbKGXkwepJTOQ==",
   "success": true,
-  "projectFilePath": "C:\\dev\\ServiceSystem2.0\\ServiceSystem2.0\\ServiceSystem2.0.csproj",
+  "projectFilePath": "c:\\dev\\ServiceSystem2.0\\ServiceSystem2.0\\ServiceSystem2.0.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Diego\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.17\\microsoft.aspnetcore.cryptography.internal.5.0.17.nupkg.sha512",
