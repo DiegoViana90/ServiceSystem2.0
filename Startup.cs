@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using ServiceSystem2.Data;
 using ServiceSystem2.Mapping;
 using Microsoft.OpenApi.Models;
+using ServiceSystem.Mapping;
 
 namespace ServiceSystem2
 {
@@ -34,6 +35,7 @@ namespace ServiceSystem2
             });
 
             services.AddScoped<MenuItemMapping>();
+            services.AddScoped<OrderMapping>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
