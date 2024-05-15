@@ -1,4 +1,6 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
+﻿    function showTable(idTabela) {
+        document.querySelectorAll('div[id^="tabela"]').forEach(tabela => {
+            tabela.style.display = 'none';
+        });
+    document.getElementById(idTabela).style.display = 'block';
+    }

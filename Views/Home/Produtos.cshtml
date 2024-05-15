@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Área de produtos";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Esta área é destinada a inclusão de novos produtos e alteração de valor.</p>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" onclick="showTable('tabelaComida')">Comida</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showTable('tabelaBebida')">Bebida</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Informe um item" aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div id="tabelaComida" style="display: none;">
+        <h2>Tabela de Comida</h2>
+        <table class="table">
+        </table>
+    </div>
+    <div id="tabelaBebida" style="display: none;">
+        <h2>Tabela de Bebida</h2>
+        <table class="table">
+        </table>
+    </div>
+</div>
+
+<script src="~/js/site.js"></script>
+
