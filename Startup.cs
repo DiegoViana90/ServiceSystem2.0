@@ -1,16 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using ServiceSystem2.Data;
 using Microsoft.OpenApi.Models;
+using ServiceSystem2.Data;
 using ServiceSystem2.Mapping;
 
 namespace ServiceSystem2
@@ -26,15 +20,8 @@ namespace ServiceSystem2
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlite(
-                    Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDatabaseDeveloperPageExceptionFilter();
-
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<AppDbContext>();
-            services.AddControllersWithViews();
-
+             services.AddDbContext<AppDbContext>();
+             services.AddControllersWithViews();
              services.AddControllers();
              services.AddScoped<MenuItemMapping>(); 
              services.AddSwaggerGen(c =>

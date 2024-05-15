@@ -3,7 +3,6 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using ServiceSystem2.Data;
 using ServiceSystem2.Mapping;
-using ServiceSystem2.Models;
 using ServiceSystem2.Models.Request;
 using Swashbuckle.AspNetCore.Annotations;
 
