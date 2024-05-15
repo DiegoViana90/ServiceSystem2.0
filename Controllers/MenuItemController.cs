@@ -7,7 +7,7 @@ using ServiceSystem2.Models;
 using ServiceSystem2.Models.Request;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace ServiceSystem.Controllers
+namespace ServiceSystem2.Controllers
 {
     [ApiController]
     [Route("v1/MenuItems")]
