@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\ServiceSystem2.0\\ServiceSystem2.0\\ServiceSystem2.0.csproj": {}
+    "C:\\dev\\servicesystem2.0\\ServiceSystem2.0\\ServiceSystem2.0.csproj": {}
   },
   "projects": {
-    "C:\\dev\\ServiceSystem2.0\\ServiceSystem2.0\\ServiceSystem2.0.csproj": {
+    "C:\\dev\\servicesystem2.0\\ServiceSystem2.0\\ServiceSystem2.0.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\ServiceSystem2.0\\ServiceSystem2.0\\ServiceSystem2.0.csproj",
+        "projectUniqueName": "C:\\dev\\servicesystem2.0\\ServiceSystem2.0\\ServiceSystem2.0.csproj",
         "projectName": "ServiceSystem2.0",
-        "projectPath": "C:\\dev\\ServiceSystem2.0\\ServiceSystem2.0\\ServiceSystem2.0.csproj",
+        "projectPath": "C:\\dev\\servicesystem2.0\\ServiceSystem2.0\\ServiceSystem2.0.csproj",
         "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\ServiceSystem2.0\\ServiceSystem2.0\\obj\\",
+        "outputPath": "C:\\dev\\servicesystem2.0\\ServiceSystem2.0\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -81,7 +86,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -93,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
         }
       }
     }

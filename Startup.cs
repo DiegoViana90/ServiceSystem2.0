@@ -36,6 +36,7 @@ namespace ServiceSystem2
 
             services.AddScoped<MenuItemMapping>();
             services.AddScoped<OrderMapping>();
+            services.AddHttpClient();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
