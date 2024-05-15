@@ -20,11 +20,11 @@ namespace ServiceSystem2
         public IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
-        {
+        {   // (todo implementação de login)
+            // services.AddIdentity<IdentityUser, IdentityRole>()
+            //     .AddEntityFrameworkStores<AppDbContext>()
+            //     .AddDefaultTokenProviders();
             services.AddDbContext<AppDbContext>();
-            services.AddIdentity<IdentityUser, IdentityRole>()
-                .AddEntityFrameworkStores<AppDbContext>()
-                .AddDefaultTokenProviders();
             services.AddControllersWithViews();
             services.AddRazorPages();
 
