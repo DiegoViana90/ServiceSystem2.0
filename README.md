@@ -24,8 +24,6 @@ Serviço de Restaurante desenvolvido em .NET 5.0 com Entity Framework utilizando
 - adicionar tempo de prepararo das comidas, para retornar essa informação para o cliente.
 
 
-Branch feature/0006 da início ao frontEnd
-
 ## Guia de Execução
 
 Este guia fornece instruções passo a passo para executar o ServiceSystem em seu ambiente local.
